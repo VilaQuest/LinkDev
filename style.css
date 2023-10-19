@@ -32,7 +32,7 @@ body {
 
 #container {
   width: 100%;
-  max-width: 588px;
+  max-width: 460px;
   margin: 56px auto 0px;
   padding: 0 24px;
 }
@@ -76,11 +76,11 @@ body {
   top: 50%;
   left: 0;
   transform: translateY(-50%);
+  animation: animation2 0.4s forwards;
 }
 
 .Light #switch button {
-  right: 0;
-  left: initial;
+animation: animation 0.4s forwards;
 }
 
 #switch span {
@@ -145,3 +145,19 @@ ul li a:hover {
   background: rgba(115, 115, 115, 0.5);
 }
 
+@keyframes animation {
+  from {
+    left: 0;
+  }
+  to{
+    left: 50%;
+  }
+}
+@keyframes animation2 {
+  from {
+   left: 50%;
+  }
+  to{
+   left: 0;
+  }
+}
